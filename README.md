@@ -14,6 +14,7 @@ if required add cors
 to run the code 
 type **node.js** in the terminal
 
-and make sure to have mongodb community server https://www.mongodb.com/try/download/community if possible
+and make sure to have mongodb community server https://www.mongodb.com/try/download/ community if possible
+
 I installed node.js and npm package from https://nodejs.org/en/download 
 and we use express server as a main here
