@@ -21,18 +21,13 @@ and we use express server as a main here
 Make sure this is how the directory looks otherwise you make a mistake somewhere
 
 Url-shortener
-│
 ├── node_modules
-│
 ├── models
 │   └── Url.js
-│
 ├── routes
 │   └── urlRoutes.js
-│
 ├── public
 │   └── index.html
-│
 ├── server.js
 ├── package.json
 ├── package-lock.json
