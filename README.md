@@ -17,18 +17,3 @@ type **node.js** in the terminal
 and make sure to have mongodb community server https://www.mongodb.com/try/download/community if possible
 I installed node.js and npm package from https://nodejs.org/en/download 
 and we use express server as a main here
-
-Make sure this is how the directory looks otherwise you make a mistake somewhere
-
-Url-shortener
-├── node_modules
-├── models
-│   └── Url.js
-├── routes
-│   └── urlRoutes.js
-├── public
-│   └── index.html
-├── server.js
-├── package.json
-├── package-lock.json
-└── README.md
