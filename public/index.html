@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -68,4 +69,84 @@
 
   <script src="script.js"></script>
 </body>
+=======
+<!DOCTYPE html>
+<html>
+<head>
+    <title>URL Shortener</title>
+    <style>
+        body{
+            font-family: Arial;
+            text-align:center;
+            margin-top:100px;
+            background:#f4f6f8;
+        }
+
+        h1{
+            color:#333;
+        }
+
+        input{
+            width:350px;
+            padding:10px;
+            border:1px solid #ccc;
+            border-radius:5px;
+        }
+
+        button{
+            padding:10px 20px;
+            background:#4f8cff;
+            color:white;
+            border:none;
+            border-radius:5px;
+            cursor:pointer;
+        }
+
+        button:hover{
+            background:#3b6fd8;
+        }
+
+        #result{
+            margin-top:20px;
+            font-weight:bold;
+        }
+    </style>
+</head>
+<body>
+
+<h1>URL Shortener</h1>
+
+<input type="text" id="urlInput" placeholder="Paste your URL here">
+<br><br>
+
+<button onclick="shortenUrl()">Shorten URL</button>
+
+<div id="result"></div>
+
+<script>
+
+async function shortenUrl(){
+
+    const url = document.getElementById("urlInput").value;
+
+    const response = await fetch("/shorten",{
+        method:"POST",
+        headers:{
+            "Content-Type":"application/json"
+        },
+        body:JSON.stringify({
+            originalUrl:url
+        })
+    });
+
+    const data = await response.json();
+
+    document.getElementById("result").innerHTML =
+        `<a href="${data.shortUrl}" target="_blank">${data.shortUrl}</a>`;
+}
+
+</script>
+
+</body>
+>>>>>>> 58ce4b2c38cec651f262571b62911c6863545784
 </html>

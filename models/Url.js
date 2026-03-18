@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const mongoose = require('mongoose');
 const urlSchema = new mongoose.Schema({
   originalUrl: {
@@ -20,3 +21,15 @@ const urlSchema = new mongoose.Schema({
 });
 
 module.exports = mongoose.model('Url', urlSchema);
+=======
+const mongoose=require("mongoose");
+const UrlSchema=new mongoose.Schema({
+    originalUrl:String,
+    shortId:String,
+    clicks:{
+        type:Number,
+        default:0
+    }
+});
+module.exports=mongoose.model("Url",UrlSchema);
+>>>>>>> 58ce4b2c38cec651f262571b62911c6863545784
