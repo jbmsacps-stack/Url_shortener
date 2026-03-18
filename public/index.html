@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>URL Shortener</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Rajdhani:wght@400;600;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <div class="scanlines"></div>
+  <div class="grid-bg"></div>
+
+  <!-- NAVBAR -->
+  <nav>
+    <div class="logo">SH<span>0</span>RT_<span>/</span>NET</div>
+    <div class="nav-links">
+    </div>
+    <div class="nav-status">
+      <div class="dot"></div>SYSTEM ONLINE
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-tag">// URL COMPRESSION PROTOCOL v2.0</div>
+    <h1>
+      <span class="line1">JB's LINK SHORTENER</span>
+      <span class="line2">WEBPAGE</span>
+    </h1>
+    <p class="hero-sub">SHORTEN_LINKS &gt;&gt; TRACK_CLICKS &gt;&gt; DOMINATE_THE_NET</p>
+  </section>
+
+  <!-- MAIN CARD -->
+  <div class="card">
+    <div class="input-row">
+      <input type="text" id="urlInput" placeholder="PASTE YOUR LONG URL HERE..."/>
+      <button class="btn" onclick="shortenUrl()">RUN</button>
+    </div>
+    <div id="result" class="result-box hidden">
+      <span class="short-url" id="shortLink"></span>
+      <button class="copy-btn" onclick="copyLink()">[ COPY ]</button>
+    </div>
+    <p id="error" class="error-msg hidden"></p>
+  </div>
+
+  <!-- STATS -->
+  <div class="stats">
+    <div class="stat">
+      <span class="stat-num" id="totalLinks">0</span>
+      <div class="stat-label">Links Shortened</div>
+    </div>
+    <div class="stat">
+      <span class="stat-num">2k</span>
+      <div class="stat-label">Total Clicks</div>
+    </div>
+    <div class="stat">
+      <span class="stat-num">67%</span>
+      <div class="stat-label">Uptime</div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    url_shortener &nbsp;|&nbsp; Joshua Baskar &nbsp;|&nbsp; &copy; 2026
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
